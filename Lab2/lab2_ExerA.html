@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<header><h1>Programming Workshop</h1></header> <!-- Header of the website -->
+
+<nav> <!-- Navigation -->
+<a href="#schedule">Schedule</a> |
+<a href="#register">Register</a> |
+<a href="#about">About</a>
+</nav>
+<section> <!-- Section 1 - About -->
+<h2>About the Event</h2>
+<article>
+  <h3>Featured Speaker: Haziq Izuddin</h3>
+  <p>Explore the elegance and simplicity of coding in Luau with Haziq Izuddin, who breaks down its streamlined syntax and lightweight performance for developers of all skill levels.</p>
+</article>
+
+<article>
+  <h3>Hands-On Workshop: Luau for IoT</h3>
+  <p>Discover how to apply Luau to connected devices and embedded hardware through an interactive, step-by-step IoT development session.</p>
+</article>
+</section>
+
+<section> <!-- Section 2 - Schedule using table -->
+<h2>Event Schedule</h2>
+<table border="1">
+<table border="1">
+  <tr>
+    <th>Time</th>
+    <th>Activity</th>
+    <th>Venue</th>
+    <th>Person in Charge</th>
+  </tr>
+  <tr>
+    <td>8:00 AM</td>
+    <td>Participant Registration & Breakfast</td>
+    <td rowspan="2">IBH 13</td>
+    <td>Event Secretariat</td>
+  </tr>
+  <tr>
+    <td>9:00 AM</td>
+    <td>Introduction to Luau & Syntax Fundamentals</td>
+    <td>Haziq Izuddin</td>
+  </tr>
+  <tr>
+    <td>11:00 AM</td>
+    <td>Embedded Environments: Setting Up Luau for IoT</td>
+    <td rowspan="1">IBH 12</td>
+    <td>Haziq Izuddin</td>
+  </tr>
+  <tr>
+    <td>1:00 PM</td>
+    <td colspan="3" align="center">Lunch & Prayer Break</td>
+  </tr>
+  <tr>
+    <td>2:30 PM</td>
+    <td>Hands-On Lab: Interfacing Sensors & Peripherals</td>
+    <td rowspan="2">IBH 12</td>
+    <td>Haziq Izuddin</td>
+  </tr>
+  <tr>
+    <td>4:30 PM</td>
+    <td>Mini-Hackathon: Building a Connected IoT Prototype</td>
+    <td>Haziq Izuddin</td>
+  </tr>
+  <tr>
+    <td>6:00 PM</td>
+    <td>Closing Ceremony & Project Showcase</td>
+    <td>DSM</td>
+    <td>Haziq Izuddin</td>
+  </tr>
+</table>
+</table>
+</section>
+
+<section> <!-- Section 3 - Registeration form -->
+<h2>Registeration</h2>
+<form action="register.html" method="post">
+<label for="fname">First Name:</label><br>
+<input type="text"id="fname" name="firstname"><br><br>
+
+<label for="matricno">Matric Number:</label><br>
+<input type="text"id="matricno" name="matricno"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email"id="email" name="email"><br><br>
+
+<label for="yearofstudy">Year of Study:</label><br> <!-- Year of study using radio button -->
+
+<input type="radio" id="year1" name="yearofstudy" value="year1">
+<label for="year1">Year 1</label><br>
+
+<input type="radio" id="year2" name="yearofstudy" value="year2">
+<label for="year2">Year 2</label><br>
+
+<input type="radio" id="year3" name="yearofstudy" value="year3">
+<label for="year3">Year 3</label><br>
+
+<input type="radio" id="year4" name="yearofstudy" value="year4">
+<label for="year3">Year 4</label><br><br>
+
+<label>Select Sessions to Join:</label><br> <!-- checkbox used to select 3 activity -->
+
+<input type="checkbox" id="session1" name="sessions" value="intro">
+<label for="session1">Introduction to Luau &amp; Syntax Fundamentals</label><br>
+
+<input type="checkbox" id="session2" name="sessions" value="iot_setup">
+<label for="session2">Embedded Environments: Setting Up Luau for IoT</label><br>
+
+<input type="checkbox" id="session3" name="sessions" value="sensor_lab">
+<label for="session3">Hands-On Lab: Interfacing Sensors &amp; Peripherals</label><br>
+
+<input type="checkbox" id="session4" name="sessions" value="hackathon">
+<label for="session4">Mini-Hackathon: Building a Connected IoT Prototype</label><br><br>
+
+<label for="faculty">Faculty / Programme:</label><br> <!-- select options of falculty and programme -->
+<select id="faculty" name="faculty">
+  <option value="fpm">Faculty of Computer Science and Mathematics</option>
+  <option value="fkk">Faculty of Engineering and Built Environment</option>
+  <option value="fstm">Faculty of Science and Marine Environment</option>
+  <option value="fpe">Faculty of Business, Economics and Social Development</option>
+</select><br><br>
+
+<input type="submit" value="Register Now"> <!-- Register button -->
+
+<footer> <!-- Footer -->
+  <p>Organised by: Luau Coding Club</p>
+  <p>&copy; 2026 Luau Coding Club. All rights reserved.</p>
+</footer>
+</section>
+</html>
+
