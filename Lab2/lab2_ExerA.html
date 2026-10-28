@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Workshop</title>
+</head>
+<body>
+
 <header><h1>Programming Workshop</h1></header> <!-- Header of the website -->
 
 <nav> <!-- Navigation -->
@@ -7,7 +13,8 @@
 <a href="#register">Register</a> |
 <a href="#about">About</a>
 </nav>
-<section> <!-- Section 1 - About -->
+
+<section id="about"> <!-- Section 1 - About -->
 <h2>About the Event</h2>
 <article>
   <h3>Featured Speaker: Haziq Izuddin</h3>
@@ -20,9 +27,8 @@
 </article>
 </section>
 
-<section> <!-- Section 2 - Schedule using table -->
+<section id="schedule"> <!-- Section 2 - Schedule using table -->
 <h2>Event Schedule</h2>
-<table border="1">
 <table border="1">
   <tr>
     <th>Time</th>
@@ -32,28 +38,28 @@
   </tr>
   <tr>
     <td>8:00 AM</td>
-    <td>Participant Registration & Breakfast</td>
+    <td>Participant Registration &amp; Breakfast</td>
     <td rowspan="2">IBH 13</td>
     <td>Event Secretariat</td>
   </tr>
   <tr>
     <td>9:00 AM</td>
-    <td>Introduction to Luau & Syntax Fundamentals</td>
+    <td>Introduction to Luau &amp; Syntax Fundamentals</td>
     <td>Haziq Izuddin</td>
   </tr>
   <tr>
     <td>11:00 AM</td>
     <td>Embedded Environments: Setting Up Luau for IoT</td>
-    <td rowspan="1">IBH 12</td>
+    <td>IBH 12</td>
     <td>Haziq Izuddin</td>
   </tr>
   <tr>
     <td>1:00 PM</td>
-    <td colspan="3" align="center">Lunch & Prayer Break</td>
+    <td colspan="3">Lunch &amp; Prayer Break</td>
   </tr>
   <tr>
     <td>2:30 PM</td>
-    <td>Hands-On Lab: Interfacing Sensors & Peripherals</td>
+    <td>Hands-On Lab: Interfacing Sensors &amp; Peripherals</td>
     <td rowspan="2">IBH 12</td>
     <td>Haziq Izuddin</td>
   </tr>
@@ -64,27 +70,26 @@
   </tr>
   <tr>
     <td>6:00 PM</td>
-    <td>Closing Ceremony & Project Showcase</td>
+    <td>Closing Ceremony &amp; Project Showcase</td>
     <td>DSM</td>
     <td>Haziq Izuddin</td>
   </tr>
 </table>
-</table>
 </section>
 
-<section> <!-- Section 3 - Registeration form -->
+<section id="register"> <!-- Section 3 - Registeration form -->
 <h2>Registeration</h2>
 <form action="register.html" method="post">
 <label for="fname">First Name:</label><br>
-<input type="text"id="fname" name="firstname"><br><br>
+<input type="text" id="fname" name="firstname"><br><br>
 
 <label for="matricno">Matric Number:</label><br>
-<input type="text"id="matricno" name="matricno"><br><br>
+<input type="text" id="matricno" name="matricno"><br><br>
 
 <label for="email">Email:</label><br>
-<input type="email"id="email" name="email"><br><br>
+<input type="email" id="email" name="email"><br><br>
 
-<label for="yearofstudy">Year of Study:</label><br> <!-- Year of study using radio button -->
+<label>Year of Study:</label><br> <!-- Year of study using radio button -->
 
 <input type="radio" id="year1" name="yearofstudy" value="year1">
 <label for="year1">Year 1</label><br>
@@ -96,7 +101,7 @@
 <label for="year3">Year 3</label><br>
 
 <input type="radio" id="year4" name="yearofstudy" value="year4">
-<label for="year3">Year 4</label><br><br>
+<label for="year4">Year 4</label><br><br>
 
 <label>Select Sessions to Join:</label><br> <!-- checkbox used to select 3 activity -->
 
@@ -121,11 +126,13 @@
 </select><br><br>
 
 <input type="submit" value="Register Now"> <!-- Register button -->
+</form>
+</section>
 
 <footer> <!-- Footer -->
   <p>Organised by: Luau Coding Club</p>
   <p>&copy; 2026 Luau Coding Club. All rights reserved.</p>
 </footer>
-</section>
-</html>
 
+</body>
+</html>
