@@ -27,15 +27,28 @@
     <h2>Book Your Ticket</h2>
     <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
 
-    <form action="booking.php" oninput="total.value = parseInt(adult.value) + parseInt(child.value)">
+    <!-- Price based on category multiplication -->
+    <form action="booking.php"
+          oninput="total.value=parseInt(adult.value)+parseInt(child.value);
+                   price.value=(adult.value*12)+(child.value*8)">
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email"><br>
 
+        <!-- Phone number input -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number" required><br>
+
         <label for="date">Show date:</label>
         <input type="date" id="date" name="date"><br>
+
+        <!-- Show time input -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br>
 
         <label for="movie">Movie:</label>
         <input id="movie" name="movie" list="movielist"><br>
@@ -54,14 +67,44 @@
         <label for="rating">Rate our service:</label>
         <input type="range" id="rating" name="rating" min="1" max="5"><br>
 
-        Total tickets: <output name="total" for="adult child"></output><br>
+        Total tickets:
+        <output name="total" for="adult child"></output><br>
+
+        Total price (RM):
+        <output name="price" for="adult child"></output><br><br>
 
         <input type="submit" value="Book Now">
     </form>
 </div>
 
+<!-- Now Showing Sidebar -->
+<div id="sidebar">
+    <h2>Now Showing</h2>
+
+    <p>
+        <strong>A Big Bold Beautiful Journey</strong>
+        <span>(PG-13)</span>
+        <a href="https://www.youtube.com/watch?v=7t9cPtA9St0">Trailer</a>
+    </p>
+
+    <p>
+        <strong>Backroom</strong>
+        <span>(PG-13)</span>
+        <a href="https://www.youtube.com/watch?v=0HjdiohVOik">Trailer</a>
+    </p>
+
+    <p>
+        <strong>Obsession</strong>
+        <span>(18)</span>
+        <a href="https://www.youtube.com/watch?v=gMC8kkwbIQQ">Trailer</a>
+    </p>
+</div>
+
 <div id="footer">
     <p>&copy; 2026 CineKampus. All rights reserved.</p>
+
+    <!-- Footer entities -->
+    <p>e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday</p>
 </div>
 
 </body>
