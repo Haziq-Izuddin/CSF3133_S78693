@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CampusBake Online Order</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <h1>CampusBake <span>- Sweeters on campus</span></h1>
+    </div>
+
+    <!-- Navigation -->
+    <div id="nav">
+      <a href="#home">Home</a> |
+      <a href="#products">Products</a> |
+      <a href="#order">Order Now</a>
+    </div>
+
+    <!-- Main content -->
+    <div id="content">
+      
+      <!-- Introduction -->
+      <h2>Welcome to CampusBake</h2>
+      <p>
+        Enjoy our <strong>freshly baked</strong> desserts made daily.
+        Choose from our <em>delicious flavours</em>,
+        customise your order with a <span>variety of icing colours</span>,
+        and place your order easily through our
+        <a href="#order">online order form</a>.
+      </p>
+      <ul>
+        <li>Fresh ingredients</li>
+        <li>Affordable prices</li>
+        <li>Fast pick-up service</li>
+      </ul>
+    </div>
+
+    <!-- Order form -->
+    <div id="order">
+      <h2>Place Your Order</h2>
+      <form oninput="total.value=(cupcakes.value*3)+(slices.value*5)">
+
+        <label for="custname">Customer Name:</label><br>
+        <input type="text"
+               id="custname"
+               name="custname"
+               placeholder="Enter your name"
+               required
+               autofocus>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email"
+               id="email"
+               name="email"
+               required>
+        <br><br>
+
+        <label for="pickupdate">Pick-up Date:</label><br>
+        <input type="date"
+               id="pickupdate"
+               name="pickupdate">
+        <br><br>
+
+        <label for="pickuptime">Pick-up Time:</label><br>
+        <input type="time"
+               id="pickuptime"
+               name="pickuptime">
+        <br><br>
+
+        <label for="flavour">Flavour:</label><br>
+        <input list="flavours"
+               id="flavour"
+               name="flavour">
+
+        <datalist id="flavours">
+          <option value="Chocolate">
+          <option value="Vanilla">
+          <option value="Strawberry">
+          <option value="Red Velvet">
+        </datalist>
+        <br><br>
+
+        <label for="colour">Icing Colour:</label><br>
+        <input type="color"
+               id="colour"
+               name="colour">
+        <br><br>
+
+        <label for="sweetness">Sweetness Level(1-5):</label><br>
+        <input type="range"
+               id="sweetness"
+               name="sweetness"
+               min="1"
+               max="5"
+               step="1">
+        <br><br>
+
+        <h3>Price Calculator</h3>
+
+        <label for="cupcakes">Cupcakes (RM3 each):</label><br>
+        <input type="number"
+               id="cupcakes"
+               name="cupcakes"
+               min="0"
+               value="0">
+        <br><br>
+
+        <label for="slices">Cake Slices (RM5 each):</label><br>
+        <input type="number"
+               id="slices"
+               name="slices"
+               min="0"
+               value="0">
+        <br><br>
+
+        Total Price:
+        RM
+        <output name="total" for="cupcakes slices">0</output>
+        <br><br>
+
+        <input type="submit" value="Submit Order">
+      </form>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+      <h2>Price List</h2>
+
+      <ul>
+        <li>CampusBake&reg; Cupcake - RM 3.00</li>
+        <li>CampusBake&reg; Cake Slice - RM 5.00</li>
+        <li>Orders &gt; 10 pieces get a free drink</li>
+        <li>Special&nbsp;Offer: Save &euro;2 on combo packs</li>
+      </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+      <p>&copy; 2026 CampusBake. All Rights Reserved.</p>
+      <p>Prices shown in &pound; and &euro; for international visitors.</p>
+    </div>
+    <!--
+    Testing Observation:
+    1. Clicking Submit with empty required fields prevents form submission
+    and the browser asks the user to fill in the required fields.
+
+    2. Entering "myemail" into the email field and clicking Submit
+    displays a validation message because the value is not a valid
+    email address format.
+    -->
+  </body>
+</html>
+
+
