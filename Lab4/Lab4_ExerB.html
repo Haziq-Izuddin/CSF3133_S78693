@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<!--
+Error 1 (Line 9): list-style-type: no; changed to none;
+Error 2 (Lines 13-16): Link states reordered to link, visited, hover, active.
+Error 3 (Line 17): overlined changed to overline.
+Error 4 (Line 18): Missing colon after color fixed.
+Error 5 (Lines 22-25): highlight changed to .highlight.
+Error 6 (Lines 19-25): Missing closing brace for #intro added.
+Error 7 (Line 34): href="menu" changed to href="#menu".
+Error 8 (Lines 42 & 46): Duplicate id="item" changed to class="item".
+Error 9 (Line 53): controls attribute added to video.
+Error 10 (Line 54): type="mp4" changed to type="video/mp4".
+-->
+
+<body>
+
+<!-- Navigation Section -->
+<header>
+    <h1>e-Café Campus</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Menu Section -->
+<section id="menu">
+
+    <h2>Today's Menu</h2>
+
+    <p id="intro">
+        Freshly brewed coffee and local delights every day.
+    </p>
+
+    <article class="item">
+        <h3>Kopi Tarik</h3>
+        <p>
+            <span class="old-price">RM 4.50</span>
+            <span class="highlight">RM 3.50</span>
+        </p>
+    </article>
+
+    <article class="item">
+        <h3>Nasi Lemak</h3>
+        <p>
+            <span class="old-price">RM 6.50</span>
+            <span class="highlight">RM 5.00</span>
+        </p>
+    </article>
+
+</section>
+
+<!-- Video Section -->
+<section id="video">
+
+    <h2>Watch Our Story</h2>
+
+    <figure>
+
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <figcaption>
+            Learn more about our café and special offers.
+        </figcaption>
+
+    </figure>
+
+</section>
+
+<!-- Feedback Form Section -->
+<section id="feedback">
+
+    <h2>Customer Feedback</h2>
+
+    <form class="feedback-form">
+
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>E-mail:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Visit Type:</label><br>
+
+        <input type="radio" name="visit" value="dinein">
+        Dine-in
+
+        <input type="radio" name="visit" value="takeaway">
+        Take-away
+
+        <br><br>
+
+        <label>Favourite Items:</label><br>
+
+        <input type="checkbox" name="fav1">
+        Kopi Tarik<br>
+
+        <input type="checkbox" name="fav2">
+        Nasi Lemak<br>
+
+        <input type="checkbox" name="fav3">
+        Sandwich<br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</section>
+
+<!-- Footer Section -->
+<footer id="contact">
+
+    <p>&copy; 2026 e-Café Campus</p>
+
+    <address>
+        Email:
+        <a href="mailto:ecafe@campus.com">
+            ecafe@campus.com
+        </a>
+    </address>
+
+</footer>
+
+</body>
+</html>

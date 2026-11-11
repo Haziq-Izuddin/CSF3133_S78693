@@ -1,0 +1,84 @@
+a:link {
+    color: #C2A68C;
+}
+
+a:visited {
+    color: #E6D8C3;
+}
+
+a:hover {
+    color: #CC6F00;
+}
+
+a:active {
+    color: #F5F5F0;
+}
+
+/* Heading Decoration */
+h1 {
+    text-decoration: overline;
+}
+
+/* Paragraph Styling */
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+/* Introduction Section */
+#intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+    padding: 10px;
+}
+
+/* Price Highlight */
+.highlight {
+    font-weight: bold;
+    color: #2bc084;
+}
+
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #5D866C;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+/* Responsive Video */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Old Price */
+.old-price {
+    text-decoration: line-through;
+    color: rgb(194, 9, 9);
+}
+
+/* Feedback Form */
+.feedback-form {
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    padding: 15px;
+    width: 90%;
+}
