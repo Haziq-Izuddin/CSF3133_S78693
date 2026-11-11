@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Internal CSS */
+        body {
+            background-color: #f5f9ff;
+        }
+
+        .welcome {
+            color: rgb(25, 25, 122);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Visit Terengganu</h1>
+        <p class="welcome">Discover the beauty of Terengganu</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Top Destinations</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>Crystal clear water and beautiful beaches.</p>
+            <p>
+                <span class="old-price">RM299</span>
+                <span class="price">RM199</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Perfect destination for snorkeling and diving.</p>
+            <p>
+                <span class="old-price">RM349</span>
+                <span class="price">RM249</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Tasik Kenyir</h3>
+            <p>Malaysia's largest man-made lake.</p>
+            <p>
+                <span class="old-price">RM259</span>
+                <span class="price">RM169</span>
+            </p>
+        </article>
+
+        <h3>Seats Filled</h3>
+        <meter min="0" max="100" value="67"></meter>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Tourism Video</h2>
+
+        <figure>
+            <video width="600" height="350" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <figcaption>
+                Experience the beauty of Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Form Section -->
+    <section id="trip">
+        <h2>Trip Interest Form</h2>
+
+        <form class="trip-form">
+            Name:
+            <input type="text" name="name"><br><br>
+
+            E-mail:
+            <input type="email" name="email"><br><br>
+
+            Traveller Type:<br>
+            <input type="radio" name="type"> Student
+            <input type="radio" name="type"> Staff
+            <input type="radio" name="type"> Public
+            <br><br>
+
+            Interests:<br>
+            <input type="checkbox"> Islands
+            <input type="checkbox"> Food
+            <input type="checkbox"> Culture
+            <input type="checkbox"> Nature
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+
+        <address>
+            Email:
+            <a href="mailto:tourism@terengganu.com">
+                tourism@terengganu.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
