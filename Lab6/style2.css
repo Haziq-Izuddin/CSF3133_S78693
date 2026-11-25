@@ -1,0 +1,109 @@
+/* Page background and base text */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+    color: #001219;
+}
+
+/* Main heading */
+h1 {
+    color: #005f73;
+}
+
+/* Container for the form */
+.container {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #94d2bd;
+}
+
+/* Input labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Text input fields */
+input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #94d2bd;
+    border-radius: 4px;
+}
+
+/* Button area */
+.buttons {
+    margin-top: 15px;
+}
+
+/* Form buttons */
+button {
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0a9396;
+}
+
+/* Calculation result */
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Time check text */
+#checkTime {
+    font-weight: bold;
+    color: #005f73;
+}
+
+/* Grade table */
+table {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+/* Table header */
+th {
+    background-color: #005f73;
+    color: white;
+    padding: 10px;
+}
+
+/* Table cells */
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Grade colors */
+.gradeA {
+    color: #0a9396;
+}
+
+.gradeB {
+    color: #005f73;
+}
+
+.gradeC {
+    color: #ee9b00;
+}
+
+.gradeF {
+    color: #ae2012;
+}
